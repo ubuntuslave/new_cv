@@ -6,18 +6,18 @@
 % Using arrays and no longer X_i, x_i, ... values
 %
 
-function analyse_error(images,gridInfo,paramEst3D)
+function analyse_error(images,gridInfo,paramEst)
 
 biased_calib = 1;
 
-if ~isfield(paramEst3D,'gammac')
+if ~isfield(paramEst,'gammac')
   fprintf(1,'You should start by calibrating the sensor.');
   return
 end
 
 n_ima = images.n_ima;
-ex = paramEst3D.ex;
-y = paramEst3D.y;
+ex = paramEst.ex;
+y = paramEst.y;
 active_images = images.active_images;
 
 if n_ima ~=0,

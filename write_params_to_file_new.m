@@ -20,15 +20,18 @@
 %                                                        %
 %                                                        %
 %   Created : 2005                                       %
-%    Author : Christopher Mei                            %
+%    Author : Christopher Mei 
+%   Modified by: Carlos Jaramillo
 %                                                        %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function write_params_to_file(fileName,xi,kc,gammac,cc,alpha_c,roi_min,roi_max)
+function write_params_to_file_new(fileName,xi1,xi2,xi3,kc,gammac,cc,alpha_c,roi_min,roi_max)
 
 fid = fopen(fileName,'w');
 
-fwrite(fid,xi,'double');
+fwrite(fid,xi1,'double');
+fwrite(fid,xi2,'double');
+fwrite(fid,xi3,'double');
 fwrite(fid,kc(1),'double');
 fwrite(fid,kc(2),'double');
 fwrite(fid,kc(3),'double');

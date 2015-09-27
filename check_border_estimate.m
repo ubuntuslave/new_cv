@@ -1,4 +1,4 @@
-if ~exist('paramEst3D','var')
+if ~exist('paramEst','var')
   disp('Please use ''Set mirror values'' first.');
   missing = 1;
   return

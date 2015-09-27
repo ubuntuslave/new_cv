@@ -3,11 +3,11 @@ toolboxPath =pwd;
 
 % Add paths
 path([toolboxPath],path);
-path([toolboxPath '\catadioptric'],path);
-path([toolboxPath '\imageAnalysis'],path);
-path([toolboxPath '\projections'],path);
-path([toolboxPath '\optimize3D'],path);
-path([toolboxPath '\simplexTools'],path);
+path([toolboxPath '/catadioptric'],path);
+path([toolboxPath '/imageAnalysis'],path);
+path([toolboxPath '/projections'],path);
+path([toolboxPath '/optimize3D'],path);
+path([toolboxPath '/simplexTools'],path);
 
 clear toolboxPath;
 
